@@ -9,8 +9,9 @@ use tauri::Manager;
 fn main() {
     tauri::Builder::default()
         .setup(|app| {
+            let discord_client_id = option_env!("VITE_DISCORD_CLIENT_ID").unwrap_or("1478276972802080808").to_string();
             let discord_state = discord_rpc::start_discord_rpc(
-                env!("VITE_DISCORD_CLIENT_ID").to_string(),
+                discord_client_id,
                 "https://discord.gg/sDFJTAurBT".to_string()
             );
             app.manage(discord_state);
@@ -18,7 +19,7 @@ fn main() {
         })
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_dialog::init())
-        .plugin(tauri_plugin_updater::init())
+        .plugin(tauri_plugin_updater::Builder::new().build())
         .plugin(tauri_plugin_process::init())
         .invoke_handler(tauri::generate_handler![
             ytdlp::check_ytdlp,
