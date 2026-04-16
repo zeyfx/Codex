@@ -11,17 +11,14 @@
             "id": "d152c1b2e915471c",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Codex Architecture.canvas",
-                "viewState": {
-                  "x": 300,
-                  "y": -99.99999999999994,
-                  "zoom": -1.04139163119693
-                }
+                "file": "4. Deploy/Passo a Passo Github.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Codex Architecture"
+              "icon": "lucide-file",
+              "title": "Passo a Passo Github"
             }
           }
         ]
@@ -188,9 +185,9 @@
   },
   "active": "d152c1b2e915471c",
   "lastOpenFiles": [
-    "4. Deploy/Passo a Passo Github.md",
-    "Codex Architecture.canvas",
     "4. Deploy/CI-CD e Updater.md",
+    "Codex Architecture.canvas",
+    "4. Deploy/Passo a Passo Github.md",
     "4. Deploy",
     "Bem-vindo.md",
     "1. Visão Geral/Arquitetura.md"
