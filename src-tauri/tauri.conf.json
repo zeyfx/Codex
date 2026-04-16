@@ -31,7 +31,7 @@
   "plugins": {
     "updater": {
       "endpoints": [
-        "https://github.com/SEU_USER/codex/releases/latest/download/latest.json"
+        "https://github.com/zeyfx/codex/releases/latest/download/latest.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDUzMTI2ODJGNjI1RjcwRTEKUldUaGNGOWlMMmdTVTV3aFgyN1ZwSmo1d0ozN2NZSGc0VTFCeHZsUlc4VUluYVFPRXJsanNSaS8K"
     }
